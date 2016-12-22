@@ -1,0 +1,107 @@
+/*-------General Body Styles------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    background-color: #fcf9f7;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: blue;
+}
+
+
+/*----------Mobile Body Styles---------*/
+
+.main-nav li {
+    display: block;
+    background: #fff;
+    margin-top: 5px;
+    padding: 10px;
+}
+
+.profile-image {
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+}
+
+.portfolio-image {
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+}
+
+.body-head {
+    /*width: 90%;*/
+    margin: 0 auto;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+.body-head p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.body-mid {
+    text-align: center
+}
+
+.body-mid p {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.lower-page {
+    background: #efedea;
+    margin-top: 50px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.main-footer {
+    border-top: solid 1px black;
+    background: #efedea;
+}
+
+.contact {
+    text-align: center;
+    display: block;
+    padding: 0 1em 15px;
+}
+
+.left-a,
+.right-a {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.left-a {
+    float: left;
+    padding-left: 1em;
+}
+
+.right-a {
+    padding-right: 1em;
+    float: right;
+}
+
+/*--------Clearfix----------*/
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
