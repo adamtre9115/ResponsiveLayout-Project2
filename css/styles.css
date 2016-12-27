@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Alice', serif;
-	line-height: 1.5;
+    line-height: 1.5;
     background-color: #fcf9f7;
 }
 
@@ -62,7 +62,7 @@ a:hover {
 }
 
 .body-mid {
-    text-align: center
+    text-align: center;
 }
 
 .body-mid p {
@@ -97,10 +97,12 @@ a:hover {
     float: right;
     padding-right: 1em;
 }
-.footer-name, 
+
+.footer-name,
 .to-top {
     margin-top: 10px;
 }
+
 .footer-nav {
     display: none;
 }
@@ -111,8 +113,8 @@ a:hover {
 @media (min-width: 768px) {
     .body-head {
         text-align: left;
-        background: #efedea;
-        width: 100%;
+        background: #f4f3ef;
+        padding-bottom: 25px;
     }
     .body-head h1,
     .main-nav li {
@@ -123,6 +125,92 @@ a:hover {
     }
     .main-nav li {
         background: none;
+    }
+    .profile-image {
+        max-width: 35%;
+        float: right;
+        margin-left: 250px;
+        margin-right: 20px;
+    }
+    
+    .portfolio {
+        display: inline-block;
+        margin-left: 1%;
+        margin-right: 20px;
+    }
+
+    .portfolio-image {
+        max-width: 95%;
+    }
+
+    .portfolio li {
+        max-width: 49.5%;
+        float: left;
+        vertical-align: top;
+        
+    }
+    .to-top {
+        display: none;
+    }
+    .footer-nav {
+        display: inline-block;
+        float: right;
+        margin-top: 10px;
+        padding-right: 1em;
+    }
+
+    .footer-nav li {
+        display: inline;
+        margin-left: 15px;
+    }
+}
+@media (min-width: 1024px) {
+    .body-head {
+        text-align: left;
+        background: #f4f3ef;
+        padding-bottom: 25px;
+    }
+    .body-head h1,
+    .main-nav li {
+        display: inline-block;
+    }
+    .main-nav {
+        float: right;
+    }
+    .main-nav li {
+        background: none;
+    }
+    .body-head p {
+        width: 48%;
+    }
+    .profile-image {
+        float: right;
+        max-width: 35%;
+        margin-left: 250px;
+        margin-right: 20px;
+    }
+    .body-mid {
+        margin: 0 auto;
+    }
+  
+    .portfolio-image {
+        max-width: 95%;
+    }
+
+    .portfolio {
+        display: inline-block;
+        margin-left: auto;
+        margin-right: 30px;
+    }
+
+  .portfolio li {
+      width: 33.33%;
+      float: left;
+      vertical-align: top;
+  }
+  body {
+      max-width: 2000px;
+  }
     }
     /*--------Clearfix----------*/
     .group:after {
