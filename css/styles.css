@@ -1,11 +1,12 @@
-/*-------General Body Styles------*/
+    /*-------General Body Styles------*/
 
 * {
     box-sizing: border-box;
 }
 
 body {
-    margin: 0 auto;
+    font-family: 'Alice', serif;
+	line-height: 1.5;
     background-color: #fcf9f7;
 }
 
@@ -25,21 +26,26 @@ a:hover {
 
 /*----------Mobile Body Styles---------*/
 
-.main-nav li {
+.main-nav {
     display: block;
-    background: #fff;
-    margin-top: 5px;
+    text-align: center;
     padding: 10px;
 }
 
+.main-nav li {
+    background: #fff;
+    margin-top: 5px;
+    padding: 5px;
+}
+
 .profile-image {
-    width: 65%;
+    max-width: 60%;
     display: block;
     margin: 0 auto;
 }
 
 .portfolio-image {
-    width: 80%;
+    max-width: 80%;
     display: block;
     margin: 0 auto;
 }
@@ -64,16 +70,11 @@ a:hover {
     padding-right: 1em;
 }
 
-.lower-page {
+#lower-page {
     background: #efedea;
     margin-top: 50px;
     padding-top: 25px;
     padding-bottom: 15px;
-}
-
-.main-footer {
-    border-top: solid 1px black;
-    background: #efedea;
 }
 
 .contact {
@@ -82,25 +83,50 @@ a:hover {
     padding: 0 1em 15px;
 }
 
-.left-a,
-.right-a {
-    padding-top: 10px;
-    display: inline-block;
+#main-footer {
+    background: #efedea;
+    border-top: solid 1px #c4c2c2;
 }
 
-.left-a {
-    float: left;
+.footer-name {
+    display: inline-block;
     padding-left: 1em;
 }
 
-.right-a {
-    padding-right: 1em;
+.to-top {
     float: right;
+    padding-right: 1em;
+}
+.footer-name, 
+.to-top {
+    margin-top: 10px;
+}
+.footer-nav {
+    display: none;
 }
 
-/*--------Clearfix----------*/
-.group:after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
+/*---------Media Queries--------*/
+
+@media (min-width: 768px) {
+    .body-head {
+        text-align: left;
+        background: #efedea;
+        width: 100%;
+    }
+    .body-head h1,
+    .main-nav li {
+        display: inline-block;
+    }
+    .main-nav {
+        float: right;
+    }
+    .main-nav li {
+        background: none;
+    }
+    /*--------Clearfix----------*/
+    .group:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
