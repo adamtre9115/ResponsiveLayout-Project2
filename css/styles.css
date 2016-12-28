@@ -58,6 +58,8 @@ a:hover {
     margin: 0 auto;
     text-align: center;
     padding: 10px 15px;
+    background: beige;
+    border-bottom: solid 1px gainsboro
 }
 
 .body-head p {
@@ -67,7 +69,7 @@ a:hover {
 
 .body-mid {
     text-align: center;
-    /*margin: 0 auto;*/
+    font-family: Athiti, sans-serif; 
 }
 
 .body-mid h2 {
@@ -81,7 +83,7 @@ a:hover {
 }
 
 #lower-page {
-    background: #efedea;
+    background: beige;
     margin-top: 50px;
     padding-top: 25px;
     padding-bottom: 15px;
@@ -94,8 +96,8 @@ a:hover {
 }
 
 #main-footer {
-    background: #efedea;
-    border-top: solid 1px #c4c2c2;
+    background: beige;
+    border-top: solid 1px gainsboro;
 }
 
 .footer-name {
@@ -123,7 +125,6 @@ a:hover {
 @media (min-width: 768px) {
     .body-head {
         text-align: left;
-        background: #f4f3ef;
         padding-bottom: 25px;
     }
     .body-head h1,
@@ -180,7 +181,6 @@ a:hover {
 @media (min-width: 1024px) {
     .body-head {
         text-align: left;
-        background: #f4f3ef;
         padding-bottom: 25px;
     }
     .body-head h1,
