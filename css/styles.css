@@ -44,10 +44,14 @@ a:hover {
     margin: 0 auto;
 }
 
-.portfolio-image {
-    max-width: 80%;
-    display: block;
+.portfolio {
+    text-align: center;
     margin: 0 auto;
+}
+.portfolio-image {
+    max-width: 90%;
+    display: block;
+    /*margin: 0 auto;*/
 }
 
 .body-head {
@@ -63,11 +67,17 @@ a:hover {
 
 .body-mid {
     text-align: center;
+    /*margin: 0 auto;*/
+}
+
+.body-mid h2 {
+    margin-right: 25px;
 }
 
 .body-mid p {
     padding-left: 1em;
     padding-right: 1em;
+    margin-right: 20px;
 }
 
 #lower-page {
@@ -129,12 +139,11 @@ a:hover {
     .profile-image {
         max-width: 35%;
         float: right;
-        margin-left: 250px;
-        margin-right: 20px;
+        margin: 0% 2% 0% 11%;
     }
     
     .portfolio {
-        display: inline-block;
+        float: left;
         margin-left: 1%;
         margin-right: 20px;
     }
@@ -145,7 +154,7 @@ a:hover {
 
     .portfolio li {
         max-width: 49.5%;
-        float: left;
+        display: inline-block;
         vertical-align: top;
         
     }
@@ -163,6 +172,10 @@ a:hover {
         display: inline;
         margin-left: 15px;
     }
+     p.contact {
+         max-width: 60%;
+         margin: 0 auto;
+}
 }
 @media (min-width: 1024px) {
     .body-head {
@@ -186,8 +199,7 @@ a:hover {
     .profile-image {
         float: right;
         max-width: 35%;
-        margin-left: 250px;
-        margin-right: 20px;
+        margin: 10% -21% 2% 0%;
     }
     .body-mid {
         margin: 0 auto;
@@ -208,10 +220,12 @@ a:hover {
       float: left;
       vertical-align: top;
   }
-  body {
-      max-width: 2000px;
-  }
-    }
+
+    p.contact {
+      max-width: 48%;
+      margin: 0 auto;
+   }
+}
     /*--------Clearfix----------*/
     .group:after {
         content: "";
