@@ -124,15 +124,23 @@ a:hover {
 
 @media (min-width: 768px) {
     .body-head {
-        text-align: left;
         padding-bottom: 25px;
+    }
+    .body-head p {
+        text-align: left;
     }
     .body-head h1,
     .main-nav li {
         display: inline-block;
     }
+
+    .body-head h1 {
+        text-align: center;
+    }
+
     .main-nav {
-        float: right;
+        margin: 0 auto;
+        margin-top: -20px;
     }
     .main-nav li {
         background: none;
@@ -140,7 +148,7 @@ a:hover {
     .profile-image {
         max-width: 35%;
         float: right;
-        margin: 0% 2% 0% 11%;
+        margin: 2% 2% 0% 11%;
     }
     
     .portfolio {
